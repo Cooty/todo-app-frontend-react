@@ -1,0 +1,1 @@
+export const vGutterFromScreen = '4vh';
