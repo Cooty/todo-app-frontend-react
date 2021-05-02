@@ -105,3 +105,7 @@ dist
 
 # Build artifacts for CRA
 build/
+
+# IDE files and folder
+.idea/
+.vscode/
