@@ -1,6 +1,7 @@
 name: Build and Deploy
 on:
-  branches:
+  push:
+    branches:
       - release
 jobs:
   build-and-deploy:
