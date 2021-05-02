@@ -20,8 +20,10 @@ jobs:
           npm ci --no-fund --no-optional
           npm run build
 
+      # @see https://github.com/marketplace/actions/deploy-to-github-pages
+      # @see https://docs.github.com/en/pages
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
-          branch: master
+          branch: release
           folder: build
