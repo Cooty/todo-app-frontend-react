@@ -3,9 +3,14 @@ import Form from "./Form";
 import Label from "./Label";
 import Button from "./Button";
 import Input from "./Input";
+import InputWrapper from './InputWrapper';
+import ButtonWrapper from './ButtonWrapper';
+import CrossIcon from '../CrossIcon';
 
 interface AddToDoProps {
-    onAddToDo: (text: string) => void
+    onAddToDo: (text: string) => void,
+    inputId: string,
+    placeholder: string
 }
 
 const AddToDo: React.FC<AddToDoProps> = (props) => {
@@ -21,20 +26,27 @@ const AddToDo: React.FC<AddToDoProps> = (props) => {
 
     return (
         <Form onSubmit={submitHandler}>
-            <Label htmlFor="todo-text">Add some new task</Label>
-            <Input type="text"
-                   id="todo-text" 
-                   autoFocus
-                   autoCorrect="off"
-                   autoCapitalize="off"
-                   autoComplete="off"
-                   placeholder="Start typing to add a ToDo"
-                   value={toDoText}
-                   onChange={(e) => setToDoText(e.target.value)}
-            />
-            <Button type="submit" disabled={!toDoText.length}>
-                Add ToDo!
-            </Button>
+            <Label htmlFor={props.inputId}>Add some new task</Label>
+            
+            <InputWrapper>
+                <Input type="text"
+                    id={props.inputId}
+                    autoFocus
+                    autoCorrect="off"
+                    autoCapitalize="off"
+                    autoComplete="off"
+                    placeholder={props.placeholder}
+                    value={toDoText}
+                    onChange={(e) => setToDoText(e.target.value)}
+                />
+                
+                <ButtonWrapper>
+                    <Button type="submit" disabled={!toDoText.length}>
+                        <CrossIcon size="big" />
+                        <span className="sr-only">Add ToDo!</span>
+                    </Button>
+                </ButtonWrapper>
+            </InputWrapper>
         </Form>
     );
 }

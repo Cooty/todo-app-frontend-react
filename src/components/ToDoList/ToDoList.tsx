@@ -5,6 +5,7 @@ import List from "./List";
 import ListItem from "./ListItem";
 import CloseButton from "./CloseButton";
 import CustomCheckbox from "./CustomCheckbox";
+import CrossIcon from "../CrossIcon";
 
 interface ToDoListProps {
     items: ToDo[],
@@ -28,7 +29,7 @@ const ToDoList: FC<ToDoListProps> = (props) => {
                         <CloseButton type="button"
                                            onClick={()=> {props.onDeleteTodo(todo.id)}}
                         >
-                            ×
+                            <CrossIcon rotated size="small" />
                         </CloseButton>
                     </ListItem>
                 )

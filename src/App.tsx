@@ -39,7 +39,10 @@ const App: React.FC = () => {
 
   return (
     <AppWrapper>
-      <AddToDo onAddToDo={addToDoHandler} />
+      <AddToDo onAddToDo={addToDoHandler} 
+               inputId="todo-input"
+               placeholder="Start typing to add a ToDo" 
+      />
       {
         todos.length ? (
           <React.Fragment>
