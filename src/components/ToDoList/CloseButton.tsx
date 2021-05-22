@@ -19,9 +19,6 @@ const CloseButton = styled.button`
     box-shadow: ${innerBorder};
     cursor: pointer;
     transition: ${transition};
-    line-height: 1;
-    font-size: 16px;
-    font-weight: bold;
     
     &:focus,
     &:hover {

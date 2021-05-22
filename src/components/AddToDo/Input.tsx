@@ -1,14 +1,16 @@
 import styled from '@emotion/styled';
 import { formElementsBase } from '../../styles/mixins';
+import { formHeight } from '../../styles/variables';
 
 const Input = styled.input`
     ${formElementsBase()}
-    flex: 1;
-    margin-right: 1.6rem;
+    width: 100%;
+    height: 100%;
     background: #fff;
     color: inherit;
     border: 2px solid rgba(165, 105, 189, 1);
     font-size: 1.8rem;
+    padding: 0.6rem ${formHeight} 0.6rem 1.6rem;
 
     &:hover,
     &:focus {
