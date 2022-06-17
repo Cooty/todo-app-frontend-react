@@ -1,4 +1,5 @@
 import React, { useState, useContext } from "react";
+import { nanoid } from "nanoid";
 import Form from "./Form";
 import Label from "./Label";
 import Button from "./Button";
@@ -20,7 +21,7 @@ const AddToDo: React.FC<AddToDoProps> = (props) => {
   const submitHandler = (e: React.FormEvent) => {
     e.preventDefault();
     if (toDoText) {
-      ctx.add({ id: Date.now().toString(), text: toDoText, isDone: false });
+      ctx.add({ id: nanoid(), text: toDoText, isDone: false });
       setToDoText("");
     }
   };
