@@ -1,6 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './styles/global.css';
-import App from './App';
+import ReactDOM from "react-dom";
+import "./styles/global.css";
+import App from "./App";
+import Provider from "./store/Provider";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <Provider>
+    <App />
+  </Provider>,
+  document.getElementById("root")
+);
