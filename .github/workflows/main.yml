@@ -17,7 +17,7 @@ jobs:
 
       - name: Install and Build
         run: |
-          npm ci --omit=optional --no-optional
+          npm ci --omit=optional --no-fund
           npm run build
 
       # @see https://github.com/marketplace/actions/deploy-to-github-pages
