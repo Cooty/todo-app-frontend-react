@@ -18,7 +18,7 @@ make build-dev
 
 to create the development image. This command should create an image called `todo-app-frontend-react:dev` on your system.
 
-now you can run it with 
+now you can run it with
 
 ```
 make run-dev
@@ -56,6 +56,10 @@ The production URL is: https://cooty.github.io/todo-app-frontend-react/
 The deployed code the to the server resides in the `release` branch. Once you merge into `master` the github action runs automatically, the build artifacts get copied the `release` branch and they get synced with the live environment.
 
 You can check out the build and deployment process in `.github/workflows/main.yml`.
+
+### 🚢 Deployment
+
+To start the Github action, you'll need to push a new tag (or create one using GitHub's web interface). Tags have to follow semantic versioning format and begin with `v`, so the correct tag name format is: `v1.0.0`.
 
 ### 🐋 Production build with Docker
 
