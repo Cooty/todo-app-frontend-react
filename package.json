@@ -1,6 +1,6 @@
 {
-  "name": "section-14-react",
-  "version": "0.1.0",
+  "name": "todo-app-frontend-react",
+  "version": "1.1.2",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.1.5",
@@ -22,7 +22,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src/ --fix"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "eslint": "^7.32.0",
     "react-error-overlay": "^6.0.9"
   }
 }
