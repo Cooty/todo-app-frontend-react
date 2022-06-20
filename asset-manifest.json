@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "https://cooty.github.io/todo-app-frontend-react/static/css/main.f429b585.chunk.css",
+    "main.js": "https://cooty.github.io/todo-app-frontend-react/static/js/main.a5eca9f0.chunk.js",
+    "main.js.map": "https://cooty.github.io/todo-app-frontend-react/static/js/main.a5eca9f0.chunk.js.map",
+    "runtime-main.js": "https://cooty.github.io/todo-app-frontend-react/static/js/runtime-main.f003e045.js",
+    "runtime-main.js.map": "https://cooty.github.io/todo-app-frontend-react/static/js/runtime-main.f003e045.js.map",
+    "static/js/2.c6c288e1.chunk.js": "https://cooty.github.io/todo-app-frontend-react/static/js/2.c6c288e1.chunk.js",
+    "static/js/2.c6c288e1.chunk.js.map": "https://cooty.github.io/todo-app-frontend-react/static/js/2.c6c288e1.chunk.js.map",
+    "index.html": "https://cooty.github.io/todo-app-frontend-react/index.html",
+    "static/css/main.f429b585.chunk.css.map": "https://cooty.github.io/todo-app-frontend-react/static/css/main.f429b585.chunk.css.map",
+    "static/js/2.c6c288e1.chunk.js.LICENSE.txt": "https://cooty.github.io/todo-app-frontend-react/static/js/2.c6c288e1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f003e045.js",
+    "static/js/2.c6c288e1.chunk.js",
+    "static/css/main.f429b585.chunk.css",
+    "static/js/main.a5eca9f0.chunk.js"
+  ]
+}
