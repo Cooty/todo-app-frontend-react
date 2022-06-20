@@ -20,15 +20,17 @@ const ToDoList: FC<ToDoListProps> = (props) => {
         return (
           <ListItem key={todo.id}>
             <CustomCheckbox>
-              <input
-                type="checkbox"
-                onChange={() => {
-                  props.onToggleDone(todo.id);
-                }}
-              />
-              <span>✔</span>
+              <div>
+                <input
+                  type="checkbox"
+                  onChange={() => {
+                    props.onToggleDone(todo.id);
+                  }}
+                />
+                <span>✔</span>
+              </div>
+              <Text isDone={todo.isDone}>{todo.text}</Text>
             </CustomCheckbox>
-            <Text isDone={todo.isDone}>{todo.text}</Text>
             <CloseButton
               type="button"
               onClick={() => {
