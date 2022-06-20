@@ -7,8 +7,9 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-20.04
     steps:
-      - name: Checkout
+      - name: Checkout and set env
         uses: actions/checkout@v2.3.1
+        run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
@@ -18,7 +19,7 @@ jobs:
       - name: Install and Build
         run: |
           npm ci --omit=optional --no-fund
-          PUBLIC_URL="${{secrets.PUBLIC_URL}}" npm run build
+          PUBLIC_URL="${{secrets.PUBLIC_URL}}" REACT_APP_RELEASE="${{ env.RELEASE_VERSION }}" npm run build
 
       # @see https://github.com/marketplace/actions/deploy-to-github-pages
       # @see https://docs.github.com/en/pages
