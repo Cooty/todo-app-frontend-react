@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "https://cooty.github.io/todo-app-frontend-react/static/css/main.1c7d1109.css",
-    "main.js": "https://cooty.github.io/todo-app-frontend-react/static/js/main.0da68fe8.js",
+    "main.js": "https://cooty.github.io/todo-app-frontend-react/static/js/main.71a63090.js",
     "index.html": "https://cooty.github.io/todo-app-frontend-react/index.html",
     "main.1c7d1109.css.map": "https://cooty.github.io/todo-app-frontend-react/static/css/main.1c7d1109.css.map",
-    "main.0da68fe8.js.map": "https://cooty.github.io/todo-app-frontend-react/static/js/main.0da68fe8.js.map"
+    "main.71a63090.js.map": "https://cooty.github.io/todo-app-frontend-react/static/js/main.71a63090.js.map"
   },
   "entrypoints": [
     "static/css/main.1c7d1109.css",
-    "static/js/main.0da68fe8.js"
+    "static/js/main.71a63090.js"
   ]
 }
