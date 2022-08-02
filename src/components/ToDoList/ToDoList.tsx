@@ -23,6 +23,7 @@ const ToDoList: FC<ToDoListProps> = (props) => {
               <div>
                 <input
                   type="checkbox"
+                  checked={todo.isDone}
                   onChange={() => {
                     props.onToggleDone(todo.id);
                   }}
