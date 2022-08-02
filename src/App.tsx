@@ -37,7 +37,6 @@ const App: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    console.log(ctx.todos);
     if (ctx.todos.length) {
       try {
         window.localStorage.setItem(storageKey, JSON.stringify(ctx.todos));
